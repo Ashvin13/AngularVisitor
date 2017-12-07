@@ -1,0 +1,15 @@
+common: &common
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
+  host: localhost
+  username: postgres
+  password: postgres
+
+development:
+  <<: *common
+  database: angular_dev
+
+# test:
+#   <<: *common
+#   database: travelshopa_test
